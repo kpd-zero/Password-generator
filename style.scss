@@ -1,0 +1,25 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+$accent-color: #C70039;
+
+
+html {
+    font-family: 'Roboto Mono';
+}
+
+.container {
+    max-width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    cursor: pointer;
+    font-family: 'Roboto Mono';
+    font-size: 16px;
+    background-color: $accent-color;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+}
