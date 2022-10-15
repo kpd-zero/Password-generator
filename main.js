@@ -101,6 +101,3 @@ const copyPassword = () => {
 
 passwordButton.addEventListener('click', setPassword);
 copyButton.addEventListener('click', copyPassword);
-
-
-
