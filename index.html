@@ -10,32 +10,51 @@
 <body>
     <div class="container">
         <h1>Password Generator</h1>
-        <div class="result-container">
-            <span id="password"></span>
-            <button class="button copy-button">
-                <img src="https://img.icons8.com/ios-glyphs/30/ffffff/clipboard.png"/>
+        <div class="password-container">
+            <div id="password" class="password"></div>
+            <button class="button copy-button" id="copy-button">
+                <!-- <img src="https://img.icons8.com/ios-glyphs/30/ffffff/clipboard.png"/> -->
+                Copy
             </button>
         </div>
         <div class="option">
-            <label for="lowercase">Include lowercase letters:</label>
-            <input type="checkbox" id="lowercase" name="lowercase">
+            <label for="password-length" class="checkbox-label">
+                Password length:
+                <div class="password-length-wrapper">
+                    <p class="password-length-value" id="password-length-value"></p>
+                    <input type="range" id="password-length" name="password-length" class="password-length" min="8" max="30" value="10">
+                </div>
+            </label>
         </div>
         <div class="option">
-            <label for="uppercase">Include uppercase letters:</label>
-            <input type="checkbox" id="uppercase" name="uppercase">
+            <label for="lowercase" class="checkbox-label">
+                Include lowercase letters:
+                <input type="checkbox" id="lowercase" name="lowercase">
+            </label>
         </div>
         <div class="option">
-            <label for="numbers">Include numbers:</label>
-            <input type="checkbox" id="lowercase" name="lowercase">
+            <label for="uppercase" class="checkbox-label">
+                Include uppercase letters:
+                <input type="checkbox" id="uppercase" name="uppercase">
+            </label>
         </div>
         <div class="option">
-            <label for="symbols">Include symbols:</label>
-            <input type="checkbox" id="symbols" name="symbols">
+            <label for="numbers" class="checkbox-label">
+                Include numbers:
+                <input type="checkbox" id="numbers" name="lowercase">
+            </label>
         </div>
-        <button class="button" id="password-button">Generate</button>
+        <div class="option">
+            <label for="symbols" class="checkbox-label">
+                Include symbols:
+                <input type="checkbox" id="symbols" name="symbols">
+            </label>
+        </div>
+        <button class="button password-button" id="password-button">Generate</button>
     </div>
 
 
     <script src="main.js"></script>
+    <script src="range.js"></script>
 </body>
 </html>
