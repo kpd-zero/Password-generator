@@ -86,6 +86,7 @@ h1 {
   align-items: center;
   background-color: #eeeeee;
   border-radius: 20px;
+  overflow-wrap: wrap;
 }
 
 .password {
