@@ -36,7 +36,7 @@ h1 {
     align-items: stretch;
     background-color: $password-container-bg;
     border-radius: 20px;
-
+    height: min-content;
 }
 
 .password {
