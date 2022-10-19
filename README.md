@@ -1,2 +1,2 @@
 # Password generator
-Simple password generator.
+Simple project to practice JavaScript.
