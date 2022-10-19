@@ -83,7 +83,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   background-color: #eeeeee;
   border-radius: 20px;
 }
@@ -91,7 +91,7 @@ h1 {
 .password {
   font-weight: 600;
   font-size: 22px;
-  margin-left: 1rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   overflow-wrap: anywhere;
 }
 
@@ -114,6 +114,7 @@ h1 {
 }
 
 .password-button {
+  width: 100%;
   padding: 0.5rem;
   margin: 1rem 0 1rem 0;
 }
@@ -198,10 +199,6 @@ input[type=checkbox]:checked::before {
   display: flex;
   justify-content: space-between;
   margin-top: 1em;
-}
-
-.password-button {
-  width: 100%;
 }
 
 @media (max-width: 1200px) {
