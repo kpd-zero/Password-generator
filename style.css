@@ -86,13 +86,13 @@ h1 {
   align-items: center;
   background-color: #eeeeee;
   border-radius: 20px;
-  overflow-wrap: wrap;
 }
 
 .password {
   font-weight: 600;
   font-size: 22px;
   margin-left: 1rem;
+  overflow-wrap: anywhere;
 }
 
 .button {
