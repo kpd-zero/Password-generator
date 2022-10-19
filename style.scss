@@ -84,6 +84,36 @@ h1 {
     margin-right: 1em;
 }
 
+input[type="range"] {
+    appearance: none;
+    width: 100%;
+    height: 10px; 
+    background: transparent;
+    outline: 2px solid $black; 
+    border-radius: 5px;
+    &::-webkit-slider-thumb {
+        appearance: none;
+        width: 1.5em;
+        height: 1.5em;
+        background-color: $black;
+        border-radius: 1em;
+        cursor: pointer; 
+        outline: max(2px, 2px) solid $black;
+        outline-offset: 1px;
+        
+    }
+    &::-moz-range-thumb {
+        width: 1.5em;
+        height: 1.5em;
+        background-color: $black;
+        border-radius: 1em;
+        cursor: pointer; 
+        outline: max(2px, 2px) solid $black;
+        outline-offset: 1px;
+    }
+}
+
+
 input[type="checkbox"] {
     appearance: none;
     background-color: #ffffff;
@@ -106,18 +136,11 @@ input[type="checkbox"] {
         transform: scale(0);
         transition: 120ms transform ease-in-out;
         box-shadow:  inset 1.5em 1.5em $black;
-        //transform-origin: bottom left;
         clip-path: circle(40%);
-        //clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
     }
 
     &:checked::before {
             transform: scale(1);
-    }
-
-    &:focus {
-        outline: max(3px, 3px) solid #c6c6c6;
-        outline-offset: 0;
     }
 }
 
