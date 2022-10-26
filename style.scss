@@ -16,10 +16,7 @@ h1 {
     margin: 3rem 0 1rem 0;
 }
 
-.copied {
-    background-color: $secondary-color;
-    transition: 0.5s ease-in-out;
-}
+
 
 .container {
     max-width: 40vw;
@@ -42,8 +39,9 @@ h1 {
 .password {
     font-weight: 600;
     font-size: 22px;
-    padding: 0.5rem 1.5rem 0.5rem 1.5rem;    
+    margin: 0.5rem 1.5rem 0.5rem 1.5rem;    
     overflow-wrap: anywhere;
+    border-radius: 20px;
 }
 
 .button {
@@ -150,6 +148,12 @@ input[type="checkbox"] {
     display: flex;
     justify-content: space-between;
     margin-top: 1em;
+}
+
+.copied {
+    background-color: $secondary-color;
+    transition: 0.5s ease-in-out;
+    
 }
 
 @media (max-width: 1200px) {
